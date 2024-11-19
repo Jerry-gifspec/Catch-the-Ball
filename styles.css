@@ -1,0 +1,67 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #1e3c72, #2a5298);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#gameContainer {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: #fff;
+  border: 3px solid #000;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  top: 0;
+  left: 0;
+}
+
+#paddle {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  background: #000;
+  border-radius: 5px;
+  transform: translateX(-50%);
+}
+
+#powerUp {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: yellow;
+  border-radius: 50%;
+  display: none; /* Initially hidden */
+}
+
+#scoreDisplay {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 10;
+}
